@@ -7,6 +7,7 @@ async function getData(count = 10) {
   
   const apiKey = process.env.NASA_API_KEY;
   
+  
   try {
     if (!apiKey) {
       throw new Error('NASA API key is not configured');
