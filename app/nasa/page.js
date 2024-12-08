@@ -6,7 +6,7 @@ async function getData(count = 10) {
   noStore(); // Opt out of static rendering
   
   const apiKey = process.env.NASA_API_KEY;
-  
+
   
   try {
     if (!apiKey) {
@@ -37,7 +37,7 @@ export default async function NasaPage() {
         <h1 className={styles.title}>NASA Astronomy Picture of the Day</h1>
         <div className={styles.error}>
           <p>Unable to load NASA APOD data. Please try again later.</p>
-          <p>Make sure you have configured the NEXT_PUBLIC_NASA_API_KEY in your environment variables.</p>
+          <p>Make sure you have configured the NASA_API_KEY in your environment variables.</p>
         </div>
       </main>
     );
