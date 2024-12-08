@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,21 +10,44 @@ export default function Home() {
           Feel free to look around, edit the source code and navigate to the
           demos.
         </p>
-        <Image
-          src="/huji.svg"
-          alt="HUJI Logo"
-          width="80"
-          height="80"
-          priority
-        />
-        <Image
-          src="/bezalel.svg"
-          alt="Bezalel Logo"
-          className="item"
-          width="80"
-          height="80"
-          priority
-        />
+        
+        <nav>
+          <ul className="flex gap-4 my-4">
+            <li>
+              <Link href="/design" className="text-blue-600 hover:underline">
+                Design Demo
+              </Link>
+            </li>
+            <li>
+              <Link href="/nasa" className="text-blue-600 hover:underline">
+                NASA Demo
+              </Link>
+            </li>
+            <li>
+              <Link href="/tic-tac-toe" className="text-blue-600 hover:underline">
+                Tic Tac Toe Demo
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="flex gap-4 my-4">
+          <Image
+            src="/huji.svg"
+            alt="HUJI Logo"
+            width="80"
+            height="80"
+            priority
+          />
+          <Image
+            src="/bezalel.svg"
+            alt="Bezalel Logo"
+            width="80"
+            height="80"
+            priority
+          />
+        </div>
+
         <div>
           <h2>Lorem Ipsum</h2>
           <p>

@@ -2,6 +2,10 @@
 /* This is a custom font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
